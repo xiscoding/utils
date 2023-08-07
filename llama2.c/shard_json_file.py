@@ -25,8 +25,8 @@ def shard_json_file(input_file, output_directory, shard_size):
         print(f"Shard {shard_number} created. Size: {len(shard_data)} items.")
 
 if __name__ == "__main__":
-    input_file = "/home/xdoestech/llama2.c/data/alpaca_cota/Auto-CoT.json"
-    output_directory = "/home/xdoestech/llama2.c/data/alpaca_cota/"
+    input_file = "/home/xdoestech/llama2.c/data/1Mgpt4/data.json"
+    output_directory = "/home/xdoestech/qlora/llm_qlora/data"
     shard_size = 1000  # Adjust the shard size as needed
 
     shard_json_file(input_file, output_directory, shard_size)
